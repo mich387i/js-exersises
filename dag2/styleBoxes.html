@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>js-oevelse-1</title>
+    <style>
+        body {
+            color: burlywood;
+        }
+
+        .box {
+            display: inline-block;
+            width: 10vw;
+            height: 10vw;
+            border: 1px solid silver;
+            margin: 7vw;
+            transition: all 1s;
+        }
+
+        /*********************/
+    </style>
+
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+    <script>
+        const box1 = document.querySelector("#box1");
+        box1.addEventListener("click", blue);
+
+        function blue() {
+            box1.style.backgroundColor = "blue";
+            box1.style.height = "4rem";
+        }
+
+        const box2 = document.querySelector("#box2");
+        box2.addEventListener("click", red);
+
+        function red() {
+            box2.style.backgroundColor = "red";
+            box2.style.border = "dotted 10px";
+        }
+
+        const box3 = document.querySelector("#box3");
+        box3.addEventListener("click", green);
+
+        function green() {
+            box3.style.backgroundColor = "green";
+            box3.style.borderRadius = "8rem";
+        }
+
+        const box4 = document.querySelector("#box4");
+        box4.addEventListener("click", orange);
+
+        function orange() {
+            box4.style.backgroundColor = "orange";
+            box4.style.width = "4rem";
+        }
+    </script>
+</body>
+
+</html>
